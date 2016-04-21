@@ -1,3 +1,8 @@
+Bluewind Srl 2016
+================================================
+Yocto Project BSP patch made on top of Freescale's 4.1.15-1.1.0_patch
+to add support for i.MX 6UltraLite Viggen Two system on module (imx6ulviggentwo).
+
 Freescale's 4.1.15-1.1.0_patch Yocto Project BSP
 ================================================
 
