@@ -13,7 +13,7 @@ DEPENDS += "lzop-native bc-native"
 SRCBRANCH = "imx_4.1.15_1.0.0_ga_viggentwo"
 LOCALVERSION = "-1.1.0"
 SRCREV = "fb0242a20fd0d8756e6ce21370be75d0f130985c"
-KERNEL_SRC ?= "https://github.com/bluewind-embedded-systems/linux-2.6-imx.git"
+KERNEL_SRC ?= "git://github.com/bluewind-embedded-systems/linux-2.6-imx.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
 
 DEFAULT_PREFERENCE = "1"
