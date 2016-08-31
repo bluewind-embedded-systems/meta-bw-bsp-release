@@ -54,9 +54,8 @@ GPU_PATCHES = " file://0008-Adding-some-fragment-shaders-for-glshader-plugin.pat
                 file://0023-glplugin-glupload-crash-in-glupload-with-a-gst-launc.patch \
 "
 
-SRC_URI_append_mx6q  = "${GPU_PATCHES}"
-SRC_URI_append_mx6dl = "${GPU_PATCHES}"
-SRC_URI_append_mx6sx = "${GPU_PATCHES}"
+SRC_URI_append_mx6  = "${GPU_PATCHES}"
+SRC_URI_remove_mx6sl = "${GPU_PATCHES}"
 
 # include fragment shaders
 FILES_${PN}-opengl += "/usr/share/*.fs"

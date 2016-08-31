@@ -11,8 +11,8 @@ require recipes-kernel/linux/linux-dtb.inc
 DEPENDS += "lzop-native bc-native"
 
 SRCBRANCH = "imx_4.1.15_1.0.0_ga_viggentwo"
-LOCALVERSION = "-1.1.0"
-SRCREV = "fb0242a20fd0d8756e6ce21370be75d0f130985c"
+LOCALVERSION = "-1.2.0"
+SRCREV = "c7e786e5d5727a73c5404a3c4d47da47dc0ee043"
 KERNEL_SRC ?= "git://github.com/bluewind-embedded-systems/linux-2.6-imx.git;protocol=git"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
 

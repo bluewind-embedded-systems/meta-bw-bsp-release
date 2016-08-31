@@ -1,12 +1,13 @@
 Bluewind Srl 2016
 ================================================
-Yocto Project BSP patch made on top of Freescale's 4.1.15-1.1.0_patch
+Yocto Project BSP patch made on top of Freescale's 4.1.15-1.2.0
 to add support for i.MX 6UltraLite Viggen Two system on module (imx6ulviggentwo).
 
-Freescale's 4.1.15-1.1.0_patch Yocto Project BSP
+Freescale's 4.1.15-1.2.0 Yocto Project BSP
 ================================================
 
-Note 4.1.15-1.1.0 is a patch update to i.MX 6UltraLite tapeout update.
+Note 4.1.15-1.2.0 is an update to i.MX 7Dual SABRE Device.
+
 To build the oriignal 4.1.15-1.0.0_ga checkout tag imx_4.1.15_1.0.0_ga in meta-fsl-bsp-release.
 
 This BSP is a Freescale release providing support for the following processors
