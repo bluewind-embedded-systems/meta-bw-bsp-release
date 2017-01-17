@@ -1,19 +1,20 @@
-# Copyright (C) 2013-2016 Freescale Semiconductor
+# Copyright (C) 2016 Bluewind srl
 # Released under the MIT license (see COPYING.MIT for the terms)
 
-SUMMARY = "Linux Kernel provided and supported by Freescale"
-DESCRIPTION = "Linux Kernel provided and supported by Freescale with focus on \
-i.MX Family Reference Boards. It includes support for many IPs such as GPU, VPU and IPU."
+SUMMARY = "Linux Kernel provided and supported by Bluewind"
+DESCRIPTION = "Linux Kernel provided and supported by Bluewind with focus on \
+i.MX6UL ViggenTwo Board. It includes support for many IPs such as GPU, VPU and IPU."
 
 require recipes-kernel/linux/linux-imx.inc
 require recipes-kernel/linux/linux-dtb.inc
 
 DEPENDS += "lzop-native bc-native"
 
-SRCBRANCH = "imx_4.1.15_2.0.0_ga"
+SRCBRANCH = "imx_4.1.15_2.0.0_ga_viggentwo"
 LOCALVERSION = "-2.0.0"
-SRCREV = "b63f3f52cb393e3287352cf63f0caef31a33ab63"
-KERNEL_SRC ?= "git://git.freescale.com/imx/linux-imx.git;protocol=git"
+SRCREV = "8809b650309cb63b2473819a232f79d53b1ba4d1"
+#KERNEL_SRC ?= "git://github.com/bluewind-embedded-systems/linux-2.6-imx.git;protocol=git"
+KERNEL_SRC ?= "git://git@git.bwlocal.it/bluewind/linux-imx.git;protocol=ssh"
 SRC_URI = "${KERNEL_SRC};branch=${SRCBRANCH}"
 
 DEFAULT_PREFERENCE = "1"
